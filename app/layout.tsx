@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="relative h-full bg-customGray-1000 pt-[60px]">
         <Header />
         <Sidebar />
-        <section className="h-full pl-[66px]">{children}</section>
+        <section className="h-full pl-[78px]">{children}</section>
       </body>
     </html>
   );
