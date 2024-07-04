@@ -9,6 +9,11 @@ const nextConfig = {
         hostname: 'chzzk.naver.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'nng-phinf.pstatic.net',
+        port: '',
+      },
     ],
   },
   webpack: (config) => {
