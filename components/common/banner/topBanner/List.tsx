@@ -1,9 +1,13 @@
-import Index from '@/components/common/banner/topBanner/Index';
+import Index, { IndexProps } from '@/components/common/banner/topBanner/Index';
 import { cn } from '@/utils/cn';
 import React from 'react';
 import './index.css';
 
-const List = () => {
+interface ListProps {
+  lists: IndexProps[];
+}
+
+const List = ({ lists }: ListProps) => {
   return (
     <div
       className={cn(`
@@ -11,8 +15,9 @@ const List = () => {
     border-border-onlyWhite-01 bg-bg-topbanner
     `)}
     >
-      <Index />
-      <Index />
+      {lists.map((list) => {
+        return <Index key={list.title} {...list} />;
+      })}
     </div>
   );
 };
