@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button = ({ children }: ButtonProps) => {
   return (
-    <button className="hover:bg-customGray-hover relative h-[30px] rounded-lg border border-gray px-2.5 py-1.5 text-xs text-customGray-300">
+    <button className="relative h-[30px] rounded-lg border border-gray px-[13px] text-xs text-customGray-300 hover:bg-customGray-hover">
       {children}
     </button>
   );
