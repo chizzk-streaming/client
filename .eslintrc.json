@@ -4,7 +4,8 @@
     "airbnb",
     "airbnb-typescript",
     "prettier",
-    "@typescript-eslint/parser"
+    "@typescript-eslint/parser",
+    "plugin:tailwindcss/recommended"
   ],
   "parserOptions": {
     "project": "tsconfig.json"
