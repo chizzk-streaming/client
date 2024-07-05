@@ -1,7 +1,7 @@
 import Menu from '@/assets/svg/menu.svg';
 import HoverLink from '@/components/common/link/HoverLink';
 import NavigatorProfile from '@/components/common/profile/NavigatorProfile.tsx';
-import NavigatorTitle from '@/components/common/title/NavigatorTitle.tsx';
+import NavigatorTitle from '@/components/common/button/title/NavigatorTitle';
 import LiveSvg from '@/assets/svg/live.svg';
 import ReplaySvg from '@/assets/svg/replay.svg';
 import CategorySvg from '@/assets/svg/category.svg';
@@ -49,10 +49,10 @@ const Sidebar = () => {
               return (
                 <HoverLink
                   href={link}
-                  className="hover:text-content-02 text-content-04"
+                  className="text-content-04 hover:text-content-02"
                   aria-current={headerPathname === link ? 'page' : undefined}
                 >
-                  <div className="hover:bg-bg-overlay-03 flex flex-col items-center rounded-md pb-1 pt-[6px] text-center ">
+                  <div className="flex flex-col items-center rounded-md pb-1 pt-[6px] text-center hover:bg-bg-overlay-03 ">
                     {icon}
                     <span className="whitespace-pre-line text-[10px] font-extrabold">
                       {title}
