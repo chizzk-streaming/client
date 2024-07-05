@@ -9,6 +9,21 @@ const nextConfig = {
         hostname: 'chzzk.naver.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'nng-phinf.pstatic.net',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'livecloud-thumb.akamaized.net',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ssl.pstatic.net',
+        port: '',
+      },
     ],
   },
   webpack: (config) => {

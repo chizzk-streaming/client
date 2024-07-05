@@ -9,7 +9,7 @@ import HoverLink from '@/components/common/link/HoverLink';
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-50 flex h-[60px] w-full items-center justify-between">
+    <header className="fixed left-0 top-0 z-50 flex h-[60px] w-full min-w-[800px] items-center justify-between bg-bg-01 text-content-02">
       <h1 className=" fixed left-[66px] flex h-[60px] w-[70px]">
         <Link href="/" className="py-[15px]">
           <Image
@@ -32,9 +32,9 @@ export default function Header() {
           <ThemeSvg />
         </HoverLink> */}
         <Button>
-          <Link href="/login" className="font-bold">
+          <a href="/login" className="font-bold">
             로그인
-          </Link>
+          </a>
         </Button>
       </div>
     </header>
