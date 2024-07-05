@@ -10,7 +10,9 @@ interface HeaderTitleProps {
 const HeaderTitle = ({ title, expandTitle }: HeaderTitleProps) => {
   return (
     <div className="flex w-full items-center gap-[10px]">
-      <strong className="flex-none text-[19px] text-content-01">{title}</strong>
+      <strong className="flex-none text-[19px] font-extrabold text-content-01">
+        {title}
+      </strong>
       {expandTitle && (
         <Link
           href="/"
