@@ -1,3 +1,5 @@
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
 import Index from '@/components/common/banner/topBanner/Index';
 import List from '@/components/common/banner/topBanner/List';
 import HeaderTitle from '@/components/common/button/title/HeaderTitle';
@@ -22,25 +24,29 @@ const DummyList = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-[2060px] flex-col">
-      <section className="flex-auto px-[30px]">
-        <div className="relative mb-6">
-          <List lists={DummyList} />
-        </div>
-        <section className="mt-[30px]">
-          <HeaderTitle title="이 라이브 어때요?" expandTitle="전체보기" />
-          <div className="mt-[15px] grid grid-cols-3 gap-x-[14px] gap-y-[30px]">
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
+    <>
+      <Header />
+      <Sidebar />
+      <main className="mx-auto flex w-full max-w-[2060px] flex-col">
+        <section className="flex-auto px-[30px]">
+          <div className="relative mb-6">
+            <List lists={DummyList} />
           </div>
+          <section className="mt-[30px]">
+            <HeaderTitle title="이 라이브 어때요?" expandTitle="전체보기" />
+            <div className="mt-[15px] grid grid-cols-3 gap-x-[14px] gap-y-[30px]">
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+              <VideoCard />
+            </div>
+          </section>
         </section>
-      </section>
-    </main>
+      </main>
+    </>
   );
 }

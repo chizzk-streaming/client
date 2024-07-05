@@ -32,9 +32,9 @@ export default function Header() {
           <ThemeSvg />
         </HoverLink> */}
         <Button>
-          <Link href="/login" className="font-bold">
+          <a href="/login" className="font-bold">
             로그인
-          </Link>
+          </a>
         </Button>
       </div>
     </header>
