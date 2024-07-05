@@ -1,5 +1,7 @@
 import Index from '@/components/common/banner/topBanner/Index';
 import List from '@/components/common/banner/topBanner/List';
+import HeaderTitle from '@/components/common/button/title/HeaderTitle';
+import VideoCard from '@/components/common/card/VideoCard';
 import Image from 'next/image';
 
 const DummyList = [
@@ -25,6 +27,19 @@ export default function Home() {
         <div className="relative mb-6">
           <List lists={DummyList} />
         </div>
+        <section className="mt-[30px]">
+          <HeaderTitle title="이 라이브 어때요?" expandTitle="전체보기" />
+          <div className="mt-[15px] grid grid-cols-3 gap-x-[14px] gap-y-[30px]">
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+          </div>
+        </section>
       </section>
     </main>
   );
